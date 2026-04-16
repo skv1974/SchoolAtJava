@@ -1,6 +1,6 @@
 package org.example;
 
-public class Main {
+public class HomeWork1 {
     public static void main(String[] args) {
     /* Создай главный метод - точку входа в Java приложение.
     В этом методе задай переменные

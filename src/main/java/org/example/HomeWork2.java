@@ -21,7 +21,7 @@ public class HomeWork2 {
 
         sumAccountCustomer = round(random.nextDouble(0,1000000)); //узнаем кол-во сольдо в кошельке
 
-        if (ageCustomer >= 18 & isInviteCustomer  & !isBlackListCustomer & sumAccountCustomer >= 50000) {
+        if (ageCustomer >= 18 & isInviteCustomer  & !isBlackListCustomer | sumAccountCustomer >= 50000) {
             isCheckedCustomer = true;
             inviteSum = round(sumAccountCustomer * 0.075);
         } else isCheckedCustomer = false;

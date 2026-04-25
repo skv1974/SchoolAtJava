@@ -54,25 +54,21 @@ public class HomeWork3 {
         System.out.println("совпадают ли корзины Пети и Терентия: " + isEqualGoods + "\n");
 
         //перегоняем все продукты в один массив
-        String[][] allGoods = new String[3][3];
-        System.arraycopy(peteGoods, 0 , allGoods[0], 0, 3);
-        System.arraycopy(nikolayGoods, 0 , allGoods[1], 0, 3);
-        System.arraycopy(terentiyGoods, 0 , allGoods[2], 0, 3);
+        String[] allGoods = new String[9];
+        System.arraycopy(peteGoods, 0 , allGoods, 0, 3);
+        System.arraycopy(nikolayGoods, 0 , allGoods, 3, 3);
+        System.arraycopy(terentiyGoods, 0 , allGoods, 6, 3);
 
-        //ищем самое короткое и самое длинное названия товаров
-        for (int i = 0; i < 3; i++){
-            for (int j = 0; j < 3; j++){
-
-                if (minGoodName.length() > allGoods[i][j].length()){
-                    minGoodName = allGoods[i][j];
+        //узнаем самое короткое, самое длинное названия и среднюю длину названий
+        for (int i = 0; i < 9; i++){
+            if (minGoodName.length() > allGoods[i].length()){
+                    minGoodName = allGoods[i];
                 }
 
-                if (maxGoodName.length() < allGoods[i][j].length()){
-                    maxGoodName = allGoods[i][j];
+                if (maxGoodName.length() < allGoods[i].length()){
+                    maxGoodName = allGoods[i];
                 }
-                avrGoodNameLength = avrGoodNameLength + allGoods[i][j].length();
-            }
-
+                avrGoodNameLength = avrGoodNameLength + allGoods[i].length();
         }
 
         //выводы о товарах

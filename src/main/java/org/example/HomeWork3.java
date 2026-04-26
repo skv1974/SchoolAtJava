@@ -65,7 +65,7 @@ public class HomeWork3 {
                     minGoodName = allGoods[i];
                 }
 
-                if (maxGoodName.length() < allGoods[i].length()){
+            if (maxGoodName.length() < allGoods[i].length()){
                     maxGoodName = allGoods[i];
                 }
                 avrGoodNameLength = avrGoodNameLength + allGoods[i].length();

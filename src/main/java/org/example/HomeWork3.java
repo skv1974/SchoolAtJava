@@ -106,8 +106,11 @@ public class HomeWork3 {
             password = passwords[i].toCharArray();
 
             //проверочки пароля, делаем вывод о валидности
-            if (password[0] == '1' | password[password.length - 1] == 'z' |
-                    passwords[i].contains("qwerty") | passwords[i].contains("1234")){
+            if (passwords[i].length() < 8 |
+                    password[0] == '1' |
+                    password[password.length - 1] == 'z' |
+                    passwords[i].contains("qwerty") |
+                    passwords[i].contains("1234")) {
 
                 isPasswordPassed = false;
 

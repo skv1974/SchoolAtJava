@@ -45,6 +45,22 @@ public class HomeWork3 {
 
         System.out.println("\nПервая часть задания №3");
 
+        //сравниваем количество покупок в корзинах Пети и Коли
+        if (peteGoods.length > nikolayGoods.length){
+            System.out.println("у Пети корзина больше чем у Коли");
+        }else
+            if (peteGoods.length < nikolayGoods.length){
+                System.out.println("у Пети корзина меньше чем у Коли");
+            }else System.out.println("корзины Пети и Коли равны");
+
+        //сравниваем количество покупок Пети и Терентия
+        if (peteGoods.length > terentiyGoods.length){
+            System.out.println("у Пети корзина больше чем у Терентия");
+        }else
+            if (peteGoods.length < terentiyGoods.length){
+                System.out.println("у Пети корзина меньше чем у Терентия");
+            }else System.out.println("корзины Пети и Терентия равны");
+
         //сравниваем корзины Пети и Коли
         isEqualGoods = Arrays.deepEquals(peteGoods,nikolayGoods);
         System.out.println("совпадают ли корзины Пети и Коли: " + isEqualGoods);

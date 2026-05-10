@@ -4,6 +4,18 @@ import java.time.Year;
 import java.util.Random;
 
 public class HomeWork5 {
+
+    //входные данные
+    private static String serverActivatedMessage = "Server protection activated";
+    private static String criticalMessage = "Intrusion attempt detected";
+
+    private static int minLength = 8;
+    private static boolean isCritical = true;
+
+    private static String prefix = "AGENT";
+    private static int[] seeds = {42, 77, 13};
+
+
     public static void main(String[] args) {
 
         /**
@@ -17,15 +29,6 @@ public class HomeWork5 {
 
         Протоколы 1, 3, 4 должны быть доступны для других классов программы. Остальные - скрыты от всех.*/
 
-        //входные данные
-        String message = "Server protection activated";
-        int minLength = 8;
-
-        String criticalMessage = "Intrusion attempt detected";
-        boolean isCritical = true;
-
-        String prefix = "AGENT";
-        int[] seeds = {42, 77, 13};
 
         //переменная для кода доступа
         String accessCode;
@@ -38,8 +41,8 @@ public class HomeWork5 {
         System.out.println("проверка кода доступа пройдена - " + accessCode + ": " + isValidCode(generateAccessCode(),minLength));
 
         //запись логов
-        System.out.println(logEvent(message));
-        System.out.println(logEvent(criticalMessage,isCritical));
+        System.out.println(logEvent(serverActivatedMessage));
+        System.out.println(logEvent(serverActivatedMessage,isCritical));
 
         //генерация агент айди
         for (int seed : seeds) {
@@ -102,7 +105,7 @@ public class HomeWork5 {
         Версия 2 должна переиспользовать версию 1, а не дублировать вывод.*/
 
         if (isCritical){
-            return "[CRITICAL] " + message;
+            return "[CRITICAL] " + criticalMessage;
         }else return logEvent(message);
 
     }

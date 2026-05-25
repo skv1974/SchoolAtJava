@@ -1,4 +1,4 @@
-package homeWorks1_6;
+package homeWorks1_5;
 
 import java.util.Scanner;
 

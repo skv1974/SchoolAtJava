@@ -1,6 +1,5 @@
-package org.example;
+package homeWorks1_6;
 
-import java.util.Objects;
 import java.util.Scanner;
 
 public class HomeWork4 {

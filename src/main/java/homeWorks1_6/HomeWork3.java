@@ -1,4 +1,4 @@
-package org.example;
+package homeWorks1_6;
 
 import java.util.Arrays;
 import static java.lang.Math.*;

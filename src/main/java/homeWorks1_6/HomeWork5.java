@@ -1,4 +1,4 @@
-package org.example;
+package homeWorks1_6;
 
 import java.time.Year;
 import java.util.Random;

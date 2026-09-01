@@ -10,8 +10,7 @@ repositories {
 }
 
 dependencies {
-    testImplementation platform('org.junit:junit-bom:5.14.0')
-    testImplementation 'org.junit.jupiter:junit-jupiter'
+
 
     implementation platform('org.junit:junit-bom:5.14.0')
     implementation 'org.junit.jupiter:junit-jupiter'
@@ -21,6 +20,14 @@ dependencies {
 
     // Библиотека для генерации ASCII-арта JFiglet
     implementation 'com.github.lalyos:jfiglet:0.0.8'
+
+    //Библиотеки Кукумбера
+    testImplementation "io.cucumber:cucumber-java:7.18.0"
+    testImplementation "io.cucumber:cucumber-junit-platform-engine:7.18.0"
+
+    //Библиотеки JUnit
+    testImplementation "org.junit.platform:junit-platform-suite:1.10.3"
+    testImplementation "org.junit.jupiter:junit-jupiter:5.10.3"
 
     // Source: https://mvnrepository.com/artifact/io.rest-assured/rest-assured
     testImplementation 'io.rest-assured:rest-assured:5.5.6'
@@ -38,4 +45,8 @@ dependencies {
 
 test {
     useJUnitPlatform()
+    testLogging {
+        events "passed", "skipped", "failed"
+        showStandardStreams = true
+    }
 }

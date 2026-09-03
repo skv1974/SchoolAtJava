@@ -1,5 +1,6 @@
 plugins {
     id 'java'
+    id("io.qameta.allure") version "4.1.0"
 }
 
 group = 'org.example'
@@ -11,9 +12,10 @@ repositories {
 
 dependencies {
 
-
     implementation platform('org.junit:junit-bom:5.14.0')
     implementation 'org.junit.jupiter:junit-jupiter'
+
+    implementation(platform("io.qameta.allure:allure-bom:2.35.4"))
 
     // Lombok
     compileOnly 'org.projectlombok:lombok:1.18.30'
@@ -31,6 +33,15 @@ dependencies {
 
     // Библиотека для генерации ASCII-арта JFiglet
     implementation 'com.github.lalyos:jfiglet:0.0.8'
+
+    // Allure
+    testImplementation 'io.qameta.allure:allure-junit5:2.35.4'
+    testImplementation 'io.qameta.allure:allure-assertj:2.35.4'
+    testImplementation 'io.qameta.allure:allure-java-commons:2.35.4'
+    testImplementation'io.qameta.allure:allure-rest-assured:2.35.4'
+    testImplementation 'io.qameta.allure:allure-selenide:2.35.4'
+
+    testImplementation 'org.aspectj:aspectjweaver:1.9.25.1'
 
     //Библиотеки Кукумбера
     testImplementation "io.cucumber:cucumber-java:7.18.0"
@@ -52,6 +63,11 @@ dependencies {
 
     // Source: https://mvnrepository.com/artifact/tools.jackson.core/jackson-databind
     implementation 'tools.jackson.core:jackson-databind:3.2.1'
+}
+
+allure {
+    //version = "3.9.0"   // Allure 3 (default)
+     version = "2.42.1"  // Allure 2
 }
 
 test {

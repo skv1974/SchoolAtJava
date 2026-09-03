@@ -7,11 +7,6 @@ import static com.codeborne.selenide.Selenide.*;
 
 /**
  * Page Object для страницы логина
- *
- * Лока́торы:
- * - CSS: $("div.class") - для одного элемента
- * - CSS: $$("div.class") - для коллекции
- * - XPath: $$x("//div[@class]") - для XPath (или $$("//div[@class]"))
  */
 @Data
 public class LoginPage {

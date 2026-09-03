@@ -3,8 +3,6 @@ package homeWork18.act2.tests;
 import homeWork18.act2.pages.LoginPage;
 import homeWork18.act2.pages.MainPage;
 import org.junit.jupiter.api.Test;
-import static com.codeborne.selenide.Condition.*;
-import static com.codeborne.selenide.Selenide.*;
 
 /**
  * ACT 2: Рефакторинг с использованием PageObject pattern

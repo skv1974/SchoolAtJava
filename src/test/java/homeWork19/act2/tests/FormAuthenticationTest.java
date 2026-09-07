@@ -1,7 +1,7 @@
-package homeWork18.act2.tests;
+package homeWork19.act2.tests;
 
-import homeWork18.act2.pages.LoginPage;
-import homeWork18.act2.pages.MainPage;
+import homeWork19.act2.pages.LoginPage;
+import homeWork19.act2.pages.MainPage;
 import org.junit.jupiter.api.Test;
 
 /**

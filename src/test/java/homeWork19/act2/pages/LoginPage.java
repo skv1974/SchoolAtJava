@@ -1,4 +1,4 @@
-package homeWork18.act2.pages;
+package homeWork19.act2.pages;
 
 import com.codeborne.selenide.SelenideElement;
 import lombok.Data;

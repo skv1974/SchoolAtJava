@@ -1,4 +1,4 @@
-package homeWork18.act1;
+package homeWork19.act1;
 
 import org.junit.jupiter.api.Test;
 import static com.codeborne.selenide.Condition.*;

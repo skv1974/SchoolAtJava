@@ -1,6 +1,6 @@
-package homeWork19.tests;
+package homeWork20.tests;
 
-import homeWork19.steps.CalculatorSteps;
+import homeWork20.steps.CalculatorSteps;
 import io.qameta.allure.*;
 import org.junit.jupiter.api.*;
 

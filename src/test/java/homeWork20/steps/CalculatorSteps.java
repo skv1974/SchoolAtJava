@@ -1,6 +1,6 @@
-package homeWork19.steps;
+package homeWork20.steps;
 
-import homeWork19.Calculator;
+import homeWork20.Calculator;
 import io.qameta.allure.Allure;
 import io.qameta.allure.Step;
 
